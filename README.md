@@ -28,7 +28,7 @@ First clone the application
 		
 and then just install the awesomeboard with [NPM](http://npm.org)
 
-		$ npm install
+		$ ./install.sh
 		
 Now that you have everything installedm you need to configure the application in order to make the Harvester and Awesome Board work. This is done by editing the  [appConfig.js](https://github.com/finn-no/awesomeboard/blob/master/appConfig.js) file, below are a description of the settings.
 

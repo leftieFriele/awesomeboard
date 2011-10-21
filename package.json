@@ -6,8 +6,9 @@
 	"repository": "git://github.com/finn-no/awesomeboard", 
 	"engines": { "node": ">= 0.2.4" },
 	"contributors": [
-		{"Snorre Nygård"},
-		{"Sveinnung Røsaker"}
+		"Anders Johnsen",
+		"Snorre Nygård",
+		"Sveinnung Røsaker"
 	],
 	"bugs": {"web": "http://twitter.com/FINN_tech"},
 	"dependencies": {

@@ -75,7 +75,7 @@ The list view is pretty crap, but we might get round to fixing it.
 Contribute
 ------------
 
-Feel free to fork this and do what ever you'd like with it. This code is licensed under the [WTFPL-license](http://sam.zoy.org/wtfpl/).
+Feel free to fork this or send pull requests to help us improve this piece of software even more.
 
 Any questions or to get notifications follow our [@FINN_tech](http://twitter.com/#!/FINN_tech) on Twitter.
 

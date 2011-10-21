@@ -81,25 +81,32 @@ function initializeExpressApplication(app){
                  skip = hits * (page - 1);
               }
               var q = req.query.q;
-	      collection.find({ $or : [ {"nick" : q}, {"tweet" : new RegExp(q) }] }, {"limit":hits, "skip":skip, "sort":[["timestamp",-1]]}, function(err, cursor) {
-			cursor.toArray(function(eRr, docs) {
-		    	if (docs.length > 0) {
-			      res.render("list", {
-				  	locals:{
+          collection.find({ $or : [ {"nick" : q}, {"tweet" : new RegExp(q) }] }, {"limit":hits, "skip":skip, "sort":[["timestamp",-1]]}, function(err, cursor) {
+            cursor.toArray(function(eRr, docs) {
+                if (docs.length > 0) {
+                  res.render("list", {
+                    locals:{
                             items: docs,
-                            link: function() { return "<a href=\"http://twitter.com/#!/" + this["nick"] + "/status/"  + this["id"] + "\">[link]</a>"; },
+                            link: function() { return "<a href=\"http://twitter.com/#!/" + this["nick"] + "/status/"  + this["source"]["id_str"] + "\">[link]</a>"; },
+                            inreplyto : function() { 
+                                if (this["source"]["in_reply_to_status_id_str"]) { 
+                                    return "<a href=\"http://twitter.com/#!/z/status/" + this["source"]["in_reply_to_status_id_str"] + "\">[reply to]</a>"; 
+                                } else {
+                                    return "";
+                                }
+                            },
                             tweettimestamp: function() { return new Date(parseInt(this["timestamp"])) ; },
                             prevpage: function() { return page - 1; },
                             nextpage: function () { return page + 1; },
                             hasMore: function() { return docs.length == hits; },
                             notFirstPage: function() { return page != 1; },
                             query: q
-					  }, partials: {
-					     list: "{{#items}}<tr><td>@{{nick}}</td><td>{{tweet}}</td><td>({{tweettimestamp}})</td><td>{{{link}}}</td></tr>{{/items}}",
-		                             older: "<a href=\"/list?q={{query}}&page={{nextpage}}\">&lt;&lt; Older</a>",
-		                             newer: "<a href=\"/list?q={{query}}&page={{prevpage}}\">Newer &gt;&gt;</a>",
-					  }
-			      });		
+                      }, partials: {
+                         list: "{{#items}}<tr><td>@{{nick}}</td><td>{{tweet}}</td><td>({{tweettimestamp}})</td><td>{{{link}}} {{{inreplyto}}}</td></tr>{{/items}}",
+                                     older: "<a href=\"/list?q={{query}}&page={{nextpage}}\">&lt;&lt; Older</a>",
+                                     newer: "<a href=\"/list?q={{query}}&page={{prevpage}}\">Newer &gt;&gt;</a>",
+                      }
+                  });       
                 } else {
                    res.send("Ingen flere treff");
                 }

@@ -79,5 +79,5 @@ Feel free to fork this or send pull requests to help us improve this piece of so
 
 Any questions or to get notifications follow our [@FINN_tech](http://twitter.com/#!/FINN_tech) on Twitter.
 
-Developed by [leftieFriele](https://github.com/leftieFriele) and [joodland](https://github.com/joodland) of FINN.no check out [the FINN.no developer blog](http://tech.finn.no) for more cool stuff.
+Check out [the FINN.no developer blog](http://tech.finn.no) for more cool stuff and behind the scenes reports.
 

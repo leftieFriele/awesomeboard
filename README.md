@@ -13,6 +13,7 @@ We use this at [FINN.no](http://finn.no) to display customer feedback on various
 Pre-requisites
 ------------
 
+* Compatible with Node 0.6.x versions
 * Sign up for a [Twitter account](http://twitter.com). You need this in order to authenticate with the Streaming API.
 
 Installation

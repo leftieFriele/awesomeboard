@@ -4,8 +4,9 @@
 	"version": "0.0.1", 
 	"author": "Espen Dalløkken and Jo Odland", 
 	"repository": "git://github.com/finn-no/awesomeboard", 
-	"engines": { "node": ">= 0.2.4" },
+	"engines": { "node": ">= 0.6.3" },
 	"contributors": [
+		"Jo Odland",
 		"Anders Johnsen",
 		"Snorre Nygård",
 		"Sveinnung Røsaker"
@@ -16,8 +17,5 @@
 		"mustache": "0.3.1-dev",
 		"mongodb": "0.9.2",
 		"connect": "1.2.1"
-	},
-	"licenses": [
-		{"type": "Do What The Fuck You Want To Public License", "url" : "http://sam.zoy.org/wtfpl/"} 
-	]
+	}
 }

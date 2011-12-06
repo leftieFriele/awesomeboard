@@ -1,7 +1,7 @@
 var mongo = require("mongodb"),
 	twitter = require("twitter-node"),
 	sys = require("sys"),
-	config = require("../appConfig").config,
+	config = require("appConfig").config,
 	port = config.databasePort;
 
 console.log("Harvesting started: " + new Date().toString());

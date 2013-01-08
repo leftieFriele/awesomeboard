@@ -1,0 +1,118 @@
+.fillparent {
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+}
+.feedbackwrapper{
+	margin: 0 30px 0 180px;
+}
+.feedbackTemprature {
+	width: 150px;
+	float: left;
+	height: 500px;	
+}
+.tempwrapper {
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	margin-left:60px;
+}
+.temp {
+    width: 105px;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+
+.tubeyay, .tubenay {
+    width: 105px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    display: -moz-box;
+    display: -webkit-box;
+    display: box;
+    -moz-box-orient: vertical;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+}
+
+.tubeyay .ant, .tubenay .ant {
+    color: #999;
+    width: 65px;
+    height: 22px;
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 16px
+}
+
+.tubeyay .ant {
+    background: transparent url(../img/yayornay2.png)
+}
+
+.tubenay .ant {
+    background: transparent url(../img/yayornay4.png);
+    line-height: 28px;
+}
+
+.tubeyay .kormassebar, .tubenay .kormassebar {
+    width: 105px;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1;
+    background: transparent url(../img/yayornay3.png) repeat;
+    display: block;
+    position: relative;
+}
+
+.tubeyay .chart, .tubenay .chart {
+    width: 20px;
+    position: absolute;
+    left: 39px;
+}
+
+.tubeyay .chart {
+    bottom: 0;
+    background-color: #55c204;
+}
+
+.tubenay .chart {
+    top: 0;
+    background-color: #e42300;
+}
+
+.yay, .nay {
+    width: 105px;
+    height: 95px;
+}
+
+.yay {
+    width: 105px;
+    height: 95px;
+    background: transparent url(../img/yayornay1.png)
+}
+
+.nay {
+    width: 105px;
+    height: 101px;
+    background: transparent url(../img/yayornay5.png)
+}
+
+.supertitle {
+font-size: 80px;
+font-face: normal;
+font-weight: bold;
+color: white;
+padding-top: 80px;
+}

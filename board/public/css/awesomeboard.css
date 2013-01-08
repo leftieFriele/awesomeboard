@@ -1,0 +1,119 @@
+
+div.TWATSKALP {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: transparent url(../img/happyskalp_small.png) no-repeat;
+    height: 100px;
+    width: 179px;
+	z-index: 10;
+}
+
+.twitterlogo{
+	position: absolute;
+    top: 20px;
+	left:20px;
+	background: transparent url(../img/twitter-bird-dark-bgs.png) no-repeat;
+    height: 122px;
+    width: 150px;
+	z-index: 10;
+
+}
+.Twatter{
+	margin:120px 60px 60px 60px;
+	border:20px solid white;
+	border-radius:10px;
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	
+}
+.v_wrapper {display:table;height:100%}
+.v_cell {display:table-cell; vertical-align:middle;}
+.Twatter .inner{
+	
+}
+.heightify {
+    height: 100%;
+}
+.awesomesize {
+    font-size: 30px;
+    line-height: 1.3em;
+}
+.centerContainer { position:relative }
+.centerInnerContainer { position:absolute; top:50%; height:10em; margin-top:-5em }
+
+.speech-byline{
+	border-radius: 5px;
+	background: rgba(255, 255, 255, 0.7);
+}
+
+.mod .inner.awsomecorners{
+	border-radius:10px;	
+}
+
+
+.awsomebar-wrapper{
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	margin:30px 40px;
+}
+
+.yes-face{
+	background:transparent url('../img/yayornay1.png') no-repeat 0 0;	
+	position:absolute;
+	top:0;
+	width:105px;
+	height:95px;
+}
+.yes-count{
+	background:transparent url('../img/yayornay2.png') no-repeat 0 0;	
+	position:absolute;
+	top:95px;
+	width:98px;
+	height:22px;
+	line-height:22px;	
+}
+.awsomebar{
+	background:transparent url('../img/yayornay3.png') repeat-y 0 0;	
+	position:absolute;
+	top:0;
+	bottom:0;
+	width:105px;
+	margin:117px 0 123px;
+}
+.no-count{
+	background:transparent url('../img/yayornay4.png') no-repeat 0 0;	
+	position:absolute;
+	bottom:101px;
+	width:98px;
+	height:22px;
+	line-height:22px;	
+}
+.no-face{
+	background:transparent url('../img/yayornay5.png') no-repeat 0 0;	
+	position:absolute;
+	bottom:0;
+	width:105px;
+	height:101px;
+}
+.yeses{
+	position:absolute;
+	height:25%;
+	bottom:50%;
+	background-color:#55c204;
+	width:18px;
+	margin-left:40px;
+}
+.noses{
+	position:absolute;
+	height:25%;
+	top:50%;
+	background-color:#e42300;
+	width:18px;
+	margin-left:40px;
+}

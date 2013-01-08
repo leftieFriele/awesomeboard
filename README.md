@@ -54,7 +54,9 @@ Start your MongoDB instance
 Starting the harvester or board application, just go into the directory and then run:
 
     $ node index.js
+
 or
+
     $ npm start
 	
 The board applciation can be viewed at `http://localhost:29099/` or you can view the list mode on `http://localhost:29099/list`.

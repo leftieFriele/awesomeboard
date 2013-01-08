@@ -81,7 +81,8 @@ Below is a sample snippet which can be used for that purpose.
 			res.write(result);
 			res.end();
 		});
-	});```
+	});
+```
 
 
 About the Awesome Board

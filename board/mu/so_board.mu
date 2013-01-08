@@ -30,10 +30,6 @@
 			<div class="no-count centerify strong">- -</div>
 			<div class="no-face"></div>
 		</div>
-		<div class="feedbackwrapper ">
-			{{>list_feedback_partial}}
-			<a href="http://innsikt.finn.no/feedback/">Alle tilbakemeldinger</a>
-        </div>
 	</div>
 
 	<div class="fillparent Twittolini">    

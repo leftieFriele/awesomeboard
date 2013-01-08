@@ -84,16 +84,6 @@ function initializePartials() {
 		throwIfError(err);
 		hbs.registerPartial('mu_list_tweet_partial', ('' + data).replace(/\n+/g, ''));
 	});
-	fs.readFile(__dirname + '/mu/innsikt.partial.mu', function(err, data){
-		throwIfError(err);
-		hbs.registerPartial('innsikt_partial', ('' + data).replace(/\n+/g, ''));
-	});
-	fs.readFile(__dirname + '/mu/list.feedback.partial.mu', function(err, data){
-		throwIfError(err);
-		hbs.registerPartial('list_feedback_partial', ('' + data).replace(/\n+/g, ''));
-	});
-	
-	
 }
 
 function initializeExpressApplication(app){

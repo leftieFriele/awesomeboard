@@ -27,9 +27,9 @@ First clone the application
 
 		$ git clone https://github.com/finn-no/awesomeboard.git
 		
-and then just run the install script we've made to make things go as smooth as possible
+and then go into the harvester and board directory and do an NPM install
 
-		$ ./install.sh
+		$ npm install
 		
 Now that you have everything installedm you need to configure the application in order to make the Harvester and Awesome Board work. This is done by editing the  [appConfig.js](https://github.com/finn-no/awesomeboard/blob/master/appConfig.js) file, below are a description of the settings.
 
@@ -51,15 +51,14 @@ Start your MongoDB instance
 
 		$ mongodb --dbpath <some location>
 
-Starting the harvester
+Starting the harvester or board application, just go into the directory and then run:
 
-    $ node harvester/harvester.js
+    $ node index.js
+or
+    $ npm start
 	
-Starting the Awesome Board
-
-    $ node webapp/app.js
-
-Now you can check `http://localhost:29099/` or you can view the list mode on `http://localhost:29099/list`
+The board applciation can be viewed at `http://localhost:29099/` or you can view the list mode on `http://localhost:29099/list`.
+The harvester will output: Harvesting started 
 
 FAQ
 ------------
@@ -88,7 +87,7 @@ Below is a sample snippet which can be used for that purpose.
 About the Awesome Board
 ------------
 
-The board application uses [jQuery](http://jquery.com), [Mustache for JS](https://github.com/janl/mustache.js) and the [eventHub](https://github.com/leftieFriele/eventhub) JS libraries in order to make it's magic.
+The board application uses [jQuery](http://jquery.com), [Handlebars for Node](https://github.com/wycats/handlebars.js/) and the [eventHub](https://github.com/leftieFriele/eventhub) JS libraries in order to make it's magic.
 The list view is pretty crap, but we might get round to fixing it.
 
 Contribute

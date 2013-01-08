@@ -1,10 +1,14 @@
 Awesome Board
 ================
+This project consists of two projects which enbales you to harvest tweets and have them displayed in a board.
+
 
 Gettings started
-npm install
-npm start
-Viola!
+---------------
+Go into the board or harvester directory
+* npm install
+* npm start
+* Viola! you are ready to go
 
 Running you local version
 --------------
